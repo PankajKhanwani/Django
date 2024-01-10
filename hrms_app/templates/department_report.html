@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Report</title>
+</head>
+<body>
+    <h1>Department Report</h1>
+
+    <table border="1">
+        <tr>
+            <th>Department</th>
+            <th>Employee Count</th>
+        </tr>
+        {% for department_count in department_counts %}
+            <tr>
+                <td>{{ department_count.department }}</td>
+                <td>{{ department_count.employee_count }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
